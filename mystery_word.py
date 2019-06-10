@@ -18,6 +18,19 @@ def play_game():
     while True: 
         user_guess(correct_guesses, incorrect_guesses)
 
+output_letters = []
+def print_word(word, correct_guesses):
+        for letter in word:
+                if letter in correct_guesses:
+                        output_letters.append(letter)
+                else:
+                        output_letters.append("_") 
+                
+        print(output_letters)
+                
+print_word(word, output_letters)
+
+
 
 play_game()
  
